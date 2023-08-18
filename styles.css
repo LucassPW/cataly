@@ -7,6 +7,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.topnav {
+    display: none;
+}
+
 .gradient {
     background-color: #f3ec78;
     background-image: linear-gradient(45deg, #f3ec78, #af4261);
@@ -158,4 +162,64 @@ a:active {
     font-weight: 700;
     margin: auto;
     text-decoration: underline;
+}
+
+@media screen and (max-width: 415px)
+{
+
+    body {
+        
+    }
+
+    .navbar {
+        display: inline-block;
+        /* border: 1px solid red; */
+        margin: 15px 0 0 15px;
+        width: 130%;
+        max-width: 1200px;
+    }
+    h1 {
+        font-size: 24px;
+        /* margin: -10px 0px 0px -15px; */
+        /* border: 1px solid olive; */
+    }
+
+    nav {
+        /* border: 1px solid blue; */
+        margin: 0;
+    }
+
+    .links ul {
+        margin: 0 0 0 -30px;
+        border: 1px solid brown;
+    }
+
+    .links li {
+        margin-left: 10px;
+    }
+
+    .links a {
+        margin: 5px;
+        font-size: 24px;
+    }
+
+    .links li a:first-of-type {
+        margin-left: -10px;
+    } 
+
+    .gradient.h1 {
+        font-size: 24px;
+    }
+
+    #intro h2 {
+        font-size: 26px;
+    }
+
+    #intro .gp {
+        font-size: 26px;
+    }
+
+    .img-grid {
+        display: none;
+    }
 }
