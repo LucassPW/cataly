@@ -77,6 +77,15 @@ h1 {
     margin: 0 8px;
 }
 
+.nav-link {
+    color: #000000;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #af4261;
+}
+
 a:active {
     text-decoration: underline;
 }
@@ -167,12 +176,17 @@ a:active {
 @media screen and (max-width: 415px)
 {
 
-    body {
-        
+    .hamburger {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
 
     .navbar {
-        display: inline-block;
+        display: inline;
         /* border: 1px solid red; */
         margin: 15px 0 0 15px;
         width: 130%;
@@ -191,7 +205,7 @@ a:active {
 
     .links ul {
         margin: 0 0 0 -30px;
-        border: 1px solid brown;
+        /* border: 1px solid brown; */
     }
 
     .links li {
@@ -211,6 +225,13 @@ a:active {
         font-size: 24px;
     }
 
+    #intro {
+        min-width: 100px;
+        max-width: 250px;
+        text-align: center;
+        margin: auto;
+    }
+
     #intro h2 {
         font-size: 26px;
     }
@@ -219,7 +240,62 @@ a:active {
         font-size: 26px;
     }
 
+    #intro p {
+        font-size: 14px;
+        max-width: 300px;
+        margin: 0;
+    }
+
+    .navbar {
+        max-width: 800px;
+    }
+
     .img-grid {
-        display: none;
+        max-width: 900px;
+        margin: 0;
+        /* padding-left: 50px; */
+        /* border: 1px solid aqua; */
+    }
+
+    .card img {
+        height: 150px;
+        /* max-width: 50%; */
+        min-width: 20px;
+        object-fit: cover;
+        /* border: 1px solid rgb(133, 28, 125); */
+    }
+
+    .card {
+        /* border: 1px solid blue; */
+        width: 45.75%;
+        display: inline-block;
+        box-sizing: border-box ;
+        padding: 5px;
+    }
+
+    .card h2 {
+        font-size: 14px;
+    }
+
+    .card.card:nth-of-type(2n){
+        margin-left: 15px
+    }
+
+    .card h2 {
+        width: 100%;
+    }
+
+    #about {
+        max-width: 800px;
+        margin-left: 0px;
+        padding-bottom: 50px;
+    }
+
+    #about .about-heading {
+        font-size: 35px;
+    }
+
+    #about h3 {
+        font-size: 21px;
     }
 }
